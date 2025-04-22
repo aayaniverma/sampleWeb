@@ -5,8 +5,8 @@ phases:
     commands:
       - echo "No build needed for static HTML site"
       - mkdir output
-      - cp index.html output/
-      - cp styles.css output/
+      - cp a.html output/
+     
 
 artifacts:
   base-directory: output
