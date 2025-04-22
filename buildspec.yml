@@ -3,10 +3,11 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "Static site build"
+      - echo "No build needed for static HTML site"
       - mkdir output
-      - shopt -s extglob
-      - cp -r !(output) output/
+      - cp index.html output/
+      - cp styles.css output/
+
 artifacts:
   base-directory: output
   files:
