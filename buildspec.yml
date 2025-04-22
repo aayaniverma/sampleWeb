@@ -3,10 +3,11 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "No build needed for static site"
+      - echo "Static site build"
       - mkdir output
-      - cp -r * output/
+      - shopt -s extglob
+      - cp -r !(output) output/
 artifacts:
+  base-directory: output
   files:
     - '**/*'
-  base-directory: output
