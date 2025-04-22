@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "No build needed for static site"
+      - mkdir output
+      - cp -r * output/
+artifacts:
+  files:
+    - '**/*'
+  base-directory: output
